@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Link from 'next/link';
 
 const links = [
@@ -9,7 +9,7 @@ const links = [
   key: `nav-link-${link.href}-${link.label}`
 }));
 
-const Nav = () => (
+const Nav = (): ReactElement => (
   <nav>
     <ul>
       <li>

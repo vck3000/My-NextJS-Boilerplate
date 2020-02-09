@@ -1,10 +1,10 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import Head from 'next/head';
 // import { NextPage } from 'next';
 import Nav from '../components/nav';
+import LoginForm from '../components/LoginForm';
 
-const Home = () => (
+const Home = (): React.ReactElement => (
   <div>
     <Head>
       <title>Home</title>
@@ -17,7 +17,6 @@ const Home = () => (
       <h1 className="title">Welcome to Next.js!</h1>
       <p className="description">
         To get started, edit <code>pages/index.js</code> and save to reload.
-        test test
       </p>
 
       <div className="row">
@@ -37,6 +36,22 @@ const Home = () => (
           <p>Find other example boilerplates on the Next.js GitHub.</p>
         </a>
       </div>
+
+      <LoginForm
+        shouldRemember
+        onUsernameChange={(): void => {
+          // Empty
+        }}
+        onPasswordChange={(): void => {
+          // Empty
+        }}
+        onRememberChange={(): void => {
+          // Empty
+        }}
+        onSubmit={(): void => {
+          // Empty
+        }}
+      />
     </div>
 
     <style jsx>
